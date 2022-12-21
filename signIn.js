@@ -1,5 +1,7 @@
 function onSignIn(googleUser) {
   try {
+    document.getElementById('g-signin2').addEventListener('click', function() {
+    window.location.href = 'https://pingu-893.github.io/web-dev/';});
     let profile = googleUser.getBasicProfile();
     $("#name").text(profile.getName());
     $("#email").text(profile.getEmail());
